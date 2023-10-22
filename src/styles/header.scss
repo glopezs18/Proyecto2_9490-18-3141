@@ -1,0 +1,18 @@
+@import "variables.scss";
+.bg-header {
+    background: $bg-header;
+
+    a {
+        span {
+            color: #fff;
+        }
+    }
+}
+
+.nav-item{
+    margin: 0 3px;
+}
+
+.btn-logout {
+    padding: 0.45rem;
+}

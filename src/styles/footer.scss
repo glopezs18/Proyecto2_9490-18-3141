@@ -1,0 +1,33 @@
+@import "variables.scss";
+
+.footer {
+    background: $bg-footer;
+    width: 100%;
+    position: relative;
+
+    .content-footer {
+        position: absolute;
+        width: 100%;
+        top: 30px;
+
+        h3 {
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 200;
+            font-size: 15px;
+        }
+    }
+
+    ul {
+        li {
+            a {
+                color: #fff !important;
+            }
+        }
+    }
+
+    p {
+        color: #fff !important;
+    }
+}
