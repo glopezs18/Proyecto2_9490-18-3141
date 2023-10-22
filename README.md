@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Proyecto Final 2
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proyecto desarrollado con REACT Typescript, SASS, donde se emula un carrito de compras, con un registro de cliente y un dashboard de administrador, cuyos servicios 
+se consumen en un API de NodeJs
 
 ## Available Scripts
 
