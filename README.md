@@ -21,22 +21,22 @@ Este proyecto es un carrito de compras desarrollado en React TypeScript que perm
 ## Instrucciones de Instalación
 1. Clona el repositorio
 
-    git clone <URL_DEL_REPOSITORIO>
+### `git clone <URL_DEL_REPOSITORIO>`
 
 2. Navega al directorio del proyecto.
 
-    cd nombre_del_proyecto
+### `cd nombre_del_proyecto`
 
 3. Instala todas las dependencias necesarias que el proyecto en react necesita para poder funcionar bien. (Indicados en package.json)
 	
-	npm install
+### `npm install`
 
 4. Inicia la aplicación 
 Ejecuta la aplicación en modo de desarrollo.\
-Abra [http://localhost:3000](http://localhost:3000) para verlo en su navegador.
 	
-	npm start
+###	`npm start`
 
+Abra [http://localhost:3000](http://localhost:3000) para verlo en su navegador.
 La página se recargará cuando realice cambios.\
 También es posible que vea errores de pelusa en la consola.
 
