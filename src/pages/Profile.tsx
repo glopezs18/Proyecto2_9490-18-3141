@@ -104,7 +104,7 @@ const Profile = () => {
 
       console.log("Formulario para editar");
       axios
-        .put(BASE_URL + '/perfil/' + dpi, data, { headers: { Authorization: 'Bearer ' + localStorage.getItem("authAdmin") } })
+        .put(BASE_URL + '/perfil/' + dpi, data, { headers: { Authorization: 'Bearer ' + localStorage.getItem("auth") } })
         .then((res) => {
           console.log(res);
           if (res.data.success) {
