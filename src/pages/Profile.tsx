@@ -43,7 +43,7 @@ const Profile = () => {
       if (response.data.success === false) {
         console.log("No se realizó la solicitud");
       } else {
-        
+
         setNombres(response.data.result.nombres);
         setApellidos(response.data.result.apellidos);
         setFechaNacimiento(response.data.result.fechaNacimiento);
@@ -178,9 +178,6 @@ const Profile = () => {
             <div className="row">
               <div className="col-12 bg-white p-0 px-3 py-3 mb-3">
                 <div className="d-flex flex-column align-items-center">
-                  {/* <img className="photo"
-                    src="https://images.unsplash.com/photo-1541647376583-8934aaf3448a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-                    alt="" /> */}
                   <div className="profile-initials">
                     <span>{String(nombres).split('')[0] + "" + String(apellidos).split('')[0]}</span>
                   </div>
@@ -192,28 +189,6 @@ const Profile = () => {
                   </div>
                 </div>
               </div>
-              {/* <div className="col-12 bg-white p-0 px-2 pb-3 mb-3">
-                <div className="d-flex justify-content-between border-bottom py-2 px-3">
-                  <p><span className="fas fa-globe me-2"></span>Website</p>
-                  <a href="#">https://bootdey.com</a>
-                </div>
-                <div className="d-flex justify-content-between border-bottom py-2 px-3">
-                  <p><span className="fab fa-github-alt me-2"></span>Github</p>
-                  <a href="">bootdey</a>
-                </div>
-                <div className="d-flex justify-content-between border-bottom py-2 px-3">
-                  <p><span className="fab fa-twitter me-2"></span>Twitter</p>
-                  <a href="">@bootdey</a>
-                </div>
-                <div className="d-flex justify-content-between border-bottom py-2 px-3">
-                  <p><span className="fab fa-instagram me-2"></span>Instagram</p>
-                  <a href="">bootdey</a>
-                </div>
-                <div className="d-flex justify-content-between py-2 px-3">
-                  <p><span className="fab fa-facebook-f me-2"></span>facebook</p>
-                  <a href="">bootdey</a>
-                </div>
-              </div> */}
             </div>
           </div>
           <div className="col-md-7 ps-md-4">
@@ -426,6 +401,18 @@ const Profile = () => {
           </Form>
         </Modal.Body>
       </Modal>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss={false}
+        draggable={false}
+        pauseOnHover
+        limit={1}
+        transition={Flip}
+      />
     </>
   );
 };
