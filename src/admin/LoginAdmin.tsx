@@ -88,7 +88,7 @@ const LoginAdmin = () => {
                         <div className="col-md-12">
                             <div className="card-body">
                                 <h3 className="card-title text-center text-secondary mt-3">
-                                    Login Form
+                                    Admin Login
                                 </h3>
                                 <form autoComplete="off" onSubmit={handleSubmit(login)}>
                                     <div className="mb-3 mt-4">
@@ -126,14 +126,8 @@ const LoginAdmin = () => {
                                             className="btn btn-outline-primary text-center shadow-none mb-3"
                                             type="submit"
                                         >
-                                            Submit
+                                            Iniciar sesión
                                         </button>
-                                        <p className="card-text pb-2">
-                                            Have an Account?{" "}
-                                            <Link style={{ textDecoration: "none" }} to={"/register"}>
-                                                Sign Up
-                                            </Link>
-                                        </p>
                                     </div>
                                 </form>
                             </div>
