@@ -119,6 +119,17 @@ const Profile = () => {
               progress: 0,
               toastId: "my_toast",
             })
+          } else {
+            toast.error(res.data.message, {
+              position: "top-right",
+              autoClose: 3000,
+              hideProgressBar: true,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: false,
+              progress: 0,
+              toastId: "my_toast",
+          });
           }
         })
         .catch(er => console.log(er))
