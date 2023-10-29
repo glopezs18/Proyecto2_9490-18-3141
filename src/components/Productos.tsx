@@ -1,4 +1,5 @@
 import EnvConfig from '../env/EnvConfig'
+import RestrictedCartBtnUser from '../auth/RestrictedCartBtnUser';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/productos.scss'
 
@@ -12,9 +13,10 @@ function Productos(props: any) {
         <div className="card-body">
           <h5 className="card-title">{props.nombre}</h5>
           <p className="card-text">Q{props.precio}</p>
-          <button className="btn btn-primary" onClick={props.onAddToCart}>
+          <RestrictedCartBtnUser props={props} />
+          {/* <button className="btn btn-primary" onClick={props.onAddToCart}>
             Agregar al carrito
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
